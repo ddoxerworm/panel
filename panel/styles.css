@@ -1,0 +1,177 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: linear-gradient(145deg, rgba(30,30,30,0.4) 0%, rgba(10,10,10,0.7) 100%);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#pageInfo {
+    font-size: 14px;
+}
+
+.btn-page {
+    background-color: rgba(255, 255, 255, 0.199);
+    padding: 8px 16px;
+    color: white;
+}
+
+.btn-page:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.btn-page:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.data-table th {
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.status-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#total-logs{
+    margin-bottom: 5px;
+}
+
+.btn-telegram {
+    background-color: rgba(255, 255, 255, 0.199);
+    width: auto;
+    height: 26px;
+    font-size: auto;
+    color: white;
+}
+
+.btn-telegram:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.icon-green { color: #4CAF50; }
+.icon-gold{color: #f0b800}
+.icon-brown { color: #7a460b; }
+.icon-red { color: #F44336; }
+.icon-blue { color: #2196F3; }
+.icon-white{color: white;}
+
+.fas {
+    text-shadow: 0 0 0px currentColor;
+}
+
+.noFas{
+    text-shadow: 0 0 0px currentColor;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+
+.btn-download {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #F44336;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .data-table {
+        font-size: 12px;
+    }
+    
+    .btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 8px;
+    }
+}
